@@ -1,0 +1,16 @@
+h1, p {
+    text-align: center;
+}
+
+.listaOrdenada:hover{
+    background-color: cadetblue;
+}
+    
+
+.listaOrdenada:active {
+    font-family:'Courier New', Courier, monospace;
+}
+
+.listaOrdenada, .listaNaoOrdenada {
+    list-style:none; 
+}
