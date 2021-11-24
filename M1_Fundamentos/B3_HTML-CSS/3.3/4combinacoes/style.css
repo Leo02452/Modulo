@@ -27,10 +27,10 @@ li em {
     font-weight: bold;
 }
 
-.listaLinguagens li:nth-child(-n+3) {
+.listaLinguagens li:tnh-child(-n+3) {
     color: blue;
 }
 
-.listaLinguagens li[text*="Java"] {
+.listaLinguagens li[li*="Java"] {
     color: pink;
 }
