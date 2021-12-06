@@ -57,34 +57,61 @@
   </head>
   <body>
     <script>
+      // 1 - crie tag h1 com texto dentro da tag body
       let titulo = document.createElement('h1');
       titulo.innerText = "Exercício 5.2 - JavaScript DOM"
       document.body.appendChild(titulo);
 
+      // 2 - crie tag main com classe dentro da tag body
       let principal = document.createElement('main');
       principal.className = 'main-content';
       document.body.appendChild(principal);
 
+      // 3 - crie tag section com classe dentro da tag main  
       let secaoCentral = document.createElement('section')
       secaoCentral.className = 'center-content';
       document.querySelector('main').appendChild(secaoCentral);
-
+      
+      // 4 - crie tag p dentro da section do exercicio 3
       let paragrafo = document.createElement('p');
       paragrafo.innerText = "algum texto colocado";
       document.querySelector('.center-content').appendChild(paragrafo);
 
+      // 5 - crie tag section com classe dentro da tag main
       let secaoEsquerda = document.createElement('section')
       secaoEsquerda.className = 'left-content';
       document.querySelector('main').appendChild(secaoEsquerda);
 
+      // 6 - crie tag com section com classe dentro da tag main
       let secaoDireita = document.createElement('section')
       secaoDireita.className = 'right-content';
       document.querySelector('main').appendChild(secaoDireita);
 
+      // 7 - crie tag imagem dentro da section do 5
       let image = document.createElement('img');
       image.src = 'https://picsum.photos/200';
       image.className = 'small-image';
       document.querySelector('.left-content').appendChild(image);
+
+      // 8 - crie lista não ordenada de 1 a 10 por extenso dentro da setion 6
+      let lista = document.createElement('ul');
+      document.querySelector('.right-content').appendChild(lista);
+
+      let numerosExtensos = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+      for (let valor of numerosExtensos) {
+        let listaDeNumero = document.createElement('li');
+        listaDeNumero.innerText = valor;
+        lista.appendChild(listaDeNumero);
+      }
+
+      // 9 - crie 3 tags h3 dentro da main
+      for (let i = 1; i <= 3; i += 1){
+        let agaTres = document.createElement('h3');
+        document.querySelector('main').appendChild(agaTres);
+      }
+
+      
 
     </script>
   </body>
