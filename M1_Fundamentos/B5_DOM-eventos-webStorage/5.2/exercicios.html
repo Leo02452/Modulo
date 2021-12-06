@@ -100,18 +100,37 @@
       let numerosExtensos = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
 
       for (let valor of numerosExtensos) {
-        let listaDeNumero = document.createElement('li');
+        var listaDeNumero = document.createElement('li');
         listaDeNumero.innerText = valor;
         lista.appendChild(listaDeNumero);
       }
 
       // 9 - crie 3 tags h3 dentro da main
       for (let i = 1; i <= 3; i += 1){
-        let agaTres = document.createElement('h3');
+        var agaTres = document.createElement('h3');
         document.querySelector('main').appendChild(agaTres);
       }
 
-      
+      // 1 - classe title na h1
+      titulo.className = 'title';
+
+      // 2 - classe description nas 3 tags h3
+      for (let i = 0; i < 3; i += 1){
+        document.querySelectorAll('h3')[i].className = 'description';
+      }
+
+      // 3 - remova section do 5 usando removechild
+      document.querySelector('main').removeChild(secaoEsquerda);
+
+      // 4 - centralize section do 6 com margin-right: auto
+      secaoDireita.style.marginRight = 'auto';
+
+      // 5 - trocar background do pai da section do 3 pra verde
+      secaoCentral.parentNode.style.backgroundColor = "green";
+
+      // 6 - remova nove e dez da lista do 8
+      lista.lastChild.remove();
+      lista.lastChild.remove();
 
     </script>
   </body>
