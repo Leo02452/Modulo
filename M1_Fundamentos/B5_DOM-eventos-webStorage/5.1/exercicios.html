@@ -42,31 +42,60 @@
       </section>
     </main>
     <script>
-        /*
-        Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
-        - document.getElementById()
-        - document.getElementsByClassName()
-        - document.getElementsByTagName()
- Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
-        */
-    function mudaTextodeP() {
-        let paragrafo = document.getElementsByTagName("p");
-        for (let p of paragrafo) {
+      /*
+      Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+      - document.getElementById()
+      - document.getElementsByClassName()
+      - document.getElementsByTagName()
+      // 1. Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+      */
+      function mudaTextodeP() {
+          let paragrafo = document.getElementsByTagName("p");
+          for (let p of paragrafo) {
             p.innerText = "Como me vejo daqui 2 anos."
+          }
+      }
+      mudaTextodeP();
+
+      // 2. Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+      function mudaCor() {
+        let fundoLateral = document.getElementsByClassName('main-content')[0];
+        fundoLateral.style.backgroundColor = 'rgb(76,164,109)';
+      }
+      mudaCor();
+
+      // 3. Crie uma função que mude a cor do quadrado vermelho para branco.
+      function corBranca() {
+        let fundoCentral = document.getElementsByClassName('center-content')[0];
+        fundoCentral.style.backgroundColor = 'white';
+      }
+      corBranca();
+
+      // 4. Crie uma função que corrija o texto da tag <h1>.
+      function corrigeTitulo() {
+        let cabecalho = document.querySelector('.title');
+        cabecalho.innerText = 'Exercício 5.1 - JavaScript';
+      }
+      corrigeTitulo();
+
+      // 5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+      function caixaAlta() {
+        let paragrafo = document.getElementsByTagName('p');
+        for (let p of paragrafo) {
+          p.style.textTransform = 'uppercase';
         }
-    }
+      }
+      caixaAlta();
 
-    mudaTextodeP();
-
-// Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
-    function mudaCor() {
-        document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109';
-    }
-    mudaCor();
-// Crie uma função que mude a cor do quadrado vermelho para branco.
-// Crie uma função que corrija o texto da tag <h1>.
-// Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
-// Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+      // 6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+      function imprimeNoConsole() {
+        let paragrafo = document.getElementsByTagName('p');
+        for (let p in paragrafo) {
+          console.log(paragrafo[p].innerText);
+        }
+      }
+      imprimeNoConsole();
+      
     </script>
   </body>
 </html>
