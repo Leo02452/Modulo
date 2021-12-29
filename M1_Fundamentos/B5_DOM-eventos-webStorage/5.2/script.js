@@ -1,3 +1,4 @@
+// Parte I
 // 1. Acesse o elemento elementoOndeVoceEsta
 const ondeVoceEsta = document.getElementById('elementoOndeVoceEsta');
 
@@ -23,3 +24,26 @@ let terceiroFilho = ondeVoceEsta.nextElementSibling;
 
 // 8. Agora acesse o terceiroFilho a partir de pai
 terceiroFilho = pai.children[2];
+
+// parte II
+// 1. Crie um irmão para elementoOndeVoceEsta
+const quintoFilho = document.createElement('section');
+quintoFilho.id = 'quintoFilho'
+pai.appendChild(quintoFilho);
+
+// 2. Crie um filho para elementoOndeVoceEsta
+const terceiroFilhoDoFilho = document.createElement('section');
+terceiroFilhoDoFilho.id = 'terceiroFilhoDoFilho';
+ondeVoceEsta.appendChild(terceiroFilhoDoFilho);
+
+// 3. Crie um filho para primeiroFilhoDoFilho
+const primeiroBisneto = document.createElement('section');
+primeiroBisneto.id = 'primeiroBisneto';
+primeiroFilhoDoFilho.appendChild(primeiroBisneto);
+
+// 4. A partir desse filho criado, acesse terceiroFilho
+terceiroFilho = primeiroBisneto.parentElement.parentElement.nextElementSibling;
+
+// parte III
+// Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho
+//pai.removeChild.incl
