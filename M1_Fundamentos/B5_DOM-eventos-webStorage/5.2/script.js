@@ -46,4 +46,14 @@ terceiroFilho = primeiroBisneto.parentElement.parentElement.nextElementSibling;
 
 // parte III
 // Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho
-//pai.removeChild.incl
+pai.removeChild(primeiroFilho);
+pai.removeChild(terceiroFilho);
+const quartoFilho = document.getElementById('quartoEUltimoFilho');
+pai.removeChild(quartoFilho);
+pai.removeChild(quintoFilho);
+
+const segundoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+ondeVoceEsta.removeChild(segundoFilhoDoFilho);
+ondeVoceEsta.removeChild(terceiroFilhoDoFilho);
+
+primeiroFilhoDoFilho.removeChild(primeiroBisneto);
