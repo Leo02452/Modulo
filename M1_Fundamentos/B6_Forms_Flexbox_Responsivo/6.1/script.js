@@ -1,17 +1,37 @@
-// SELETORES
-const INPUT_TEXT = document.querySelector("#input-text");
-const INPUT_CHECKBOX = document.querySelector("#input-checkbox");
-const HREF_LINK = document.querySelector("#href");
+const estados = [
+  'Acre',
+  'Alagoas',
+  'Amapá',
+  'Amazonas',
+  'Bahia',
+  'Ceará',
+  'Distrito Federal',
+  'Espirito Santo',
+  'Goías',
+  'Maranhão',
+  'Mato Grosso',
+  'Mato Grosso do Sul',
+  'Minas Gerais',
+  'Pará',
+  'Paraíba',
+  'Paraná',
+  'Pernambuco',
+  'Piauí',
+  'Rio de Janeiro',
+  'Rio Grande do Norte',
+  'Rio Grande do Sul',
+  'Rondônia',
+  'Roraíma',
+  'Santa Catarina',
+  'São Paulo',
+  'Sergipe',
+  'Tocantins',
+];
 
-HREF_LINK.addEventListener('click', function pDLink(event) {
-  event.preventDefault();
-})
+const listaDeEstados = document.getElementById('estado-input');
 
-INPUT_CHECKBOX.addEventListener('click', function pDCheckbox(event) {
-  event.preventDefault();
-})
-
-INPUT_TEXT.addEventListener('keypress', function pDText(event) {
-  event.key;
-  event.preventDefault();
-})
+for (let i = 0; i < estados.length; i += 1) {
+  const opcao = document.createElement('option');
+  opcao.innerText = estados[i];
+  listaDeEstados.appendChild(opcao);
+}

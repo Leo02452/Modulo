@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Formulario</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <label for="nome-input">Nome:
+        <input type="text" name="nome" id="nome-input" maxlength="40" required>
+      </label>
+      <br>
+      <label for="email-input">Email:
+        <input type="text" name="email" id="email-input" maxlength="50" required>
+      </label>
+      <br>
+      <label for="cpf-input">CPF:
+        <input type="text" name="cpf" id="cpf-input" maxlength="11" required>
+      </label>
+      <br>
+      <label for="endereco-input">Endereço:
+        <input type="text" name="endereco" id="endereco-input" maxlength="200" required>
+      </label>
+      <br>
+      <label for="cidade-input">Cidade:
+        <input type="text" name="cidade" id="cidade-input" maxlength="28" required>
+      </label>
+      <br>
+      <label for="estado-input">Estado:
+        <select id="estado-input" name="estado" required>
+
+        </select>
+      </label>
+      <br>
+      <label for="tipo-casa">Tipo:
+        <input type="radio" name="tipo" id="tipo-casa" required>Casa
+      </label>
+      <label for="tipo-ape">
+        <input type="radio" name="tipo" id="tipo-ape" required>Apartamento
+      </label>
+    </fieldset>
+    <fieldset>
+      <label for="resumo">Resumo do Curriculo:
+        <textarea id="resumo" maxlength="1000" required></textarea>
+      </label>
+      <br>
+      <label for="cargo">Cargo:
+        <input type="text" name="cargo" id="cargo" maxlength="40" required>
+      </label>
+      <br>
+      <label for="descricao-cargo">Descrição do cargo:
+        <input type="text" name="descricao-cargo" id="descricao-cargo" maxlength="500" required>
+      </label>
+      <br>
+      <label for="data-inicio">Data de inicio:
+        <input type="text" name="data-inicio" id="data-inicio" required>
+      </label>
+    </fieldset>
+  </form>
+  <script src="script.js" ></script>
+</body>
+</html>
