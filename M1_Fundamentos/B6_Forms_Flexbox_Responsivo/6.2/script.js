@@ -44,28 +44,39 @@ campoData.DatePickerX.init({
   minDate: Date(),
 });
 
-let dataEscolhida = campoData.value;
+const dataEscolhida = document.getElementById('data-inicio').DatePickerX.getValue();
+console.log(dataEscolhida);
 
 const validation = new JustValidate('#form');
 
 validation
-  .addField('#name', [
-    {
-      rule: 'minLength',
-      value: 3,
-    },
+  .addField('#nome-input', [
     {
       rule: 'maxLength',
-      value: 30,
+      value: 40,
     },
-  ])
-  .addField('#email', [
     {
       rule: 'required',
-      errorMessage: 'Email is required',
+      errorMessage: 'Nome é um campo obrigatório',
+    },
+  ])
+  .addField('#email-input', [
+    {
+      rule: 'maxLength',
+      value: 50,
     },
     {
-      rule: 'email',
-      errorMessage: 'Email is invalid!',
+      rule: 'required',
+      errorMessage: 'Email é um campo obrigatório',
+    },
+  ])
+  .addField('#cpf-input', [
+    {
+      rule: 'maxLength',
+      value: 11,
+    },
+    {
+      rule: 'required',
+      errorMessage: 'CPF é um campo obrigatório',
     },
   ]);
