@@ -54,29 +54,72 @@ validation
     {
       rule: 'maxLength',
       value: 40,
+      errorMessage: 'Maximo de 40 caracteres',
+
     },
     {
       rule: 'required',
-      errorMessage: 'Nome é um campo obrigatório',
+      errorMessage: 'Campo obrigatório',
     },
   ])
   .addField('#email-input', [
     {
       rule: 'maxLength',
       value: 50,
+      errorMessage: 'Maximo de 50 caracteres',
     },
     {
       rule: 'required',
-      errorMessage: 'Email é um campo obrigatório',
+      errorMessage: 'Campo obrigatório',
     },
   ])
   .addField('#cpf-input', [
     {
       rule: 'maxLength',
       value: 11,
+      errorMessage: 'Maximo de 11 caracteres',
     },
     {
       rule: 'required',
-      errorMessage: 'CPF é um campo obrigatório',
+      errorMessage: 'Campo obrigatório',
+    },
+  ])
+  .addField('#endereco-input', [
+    {
+      rule: 'maxLength',
+      value: 200,
+      errorMessage: 'Maximo de 200 caracteres',
+    },
+    {
+      rule: 'required',
+      errorMessage: 'Campo obrigatório',
+    },
+  ])
+  .addField('#cidade-input', [
+    {
+      rule: 'maxLength',
+      value: 28,
+      errorMessage: 'Maximo de 28 caracteres',
+    },
+    {
+      rule: 'required',
+      errorMessage: 'Campo obrigatório',
+    },
+  ])
+  .addField('#estado-input', [
+    {
+      rule: 'required',
+      errorMessage: 'Campo obrigatório',
+    },
+  ])
+  .addField('#resumo', [
+    {
+      rule: 'maxLength',
+      value: 1000,
+      errorMessage: 'Maximo de 1000 caracteres',
+    },
+    {
+      rule: 'required',
+      errorMessage: 'Campo obrigatório',
     },
   ]);
