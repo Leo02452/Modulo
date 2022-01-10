@@ -44,28 +44,82 @@ campoData.DatePickerX.init({
   minDate: Date(),
 });
 
-let dataEscolhida = campoData.value;
+const dataEscolhida = document.getElementById('data-inicio').DatePickerX.getValue();
+console.log(dataEscolhida);
 
 const validation = new JustValidate('#form');
 
 validation
-  .addField('#name', [
-    {
-      rule: 'minLength',
-      value: 3,
-    },
+  .addField('#nome-input', [
     {
       rule: 'maxLength',
-      value: 30,
+      value: 40,
+      errorMessage: 'Maximo de 40 caracteres',
+
     },
-  ])
-  .addField('#email', [
     {
       rule: 'required',
-      errorMessage: 'Email is required',
+      errorMessage: 'Campo obrigatório',
+    },
+  ])
+  .addField('#email-input', [
+    {
+      rule: 'maxLength',
+      value: 50,
+      errorMessage: 'Maximo de 50 caracteres',
     },
     {
-      rule: 'email',
-      errorMessage: 'Email is invalid!',
+      rule: 'required',
+      errorMessage: 'Campo obrigatório',
+    },
+  ])
+  .addField('#cpf-input', [
+    {
+      rule: 'maxLength',
+      value: 11,
+      errorMessage: 'Maximo de 11 caracteres',
+    },
+    {
+      rule: 'required',
+      errorMessage: 'Campo obrigatório',
+    },
+  ])
+  .addField('#endereco-input', [
+    {
+      rule: 'maxLength',
+      value: 200,
+      errorMessage: 'Maximo de 200 caracteres',
+    },
+    {
+      rule: 'required',
+      errorMessage: 'Campo obrigatório',
+    },
+  ])
+  .addField('#cidade-input', [
+    {
+      rule: 'maxLength',
+      value: 28,
+      errorMessage: 'Maximo de 28 caracteres',
+    },
+    {
+      rule: 'required',
+      errorMessage: 'Campo obrigatório',
+    },
+  ])
+  .addField('#estado-input', [
+    {
+      rule: 'required',
+      errorMessage: 'Campo obrigatório',
+    },
+  ])
+  .addField('#resumo', [
+    {
+      rule: 'maxLength',
+      value: 1000,
+      errorMessage: 'Maximo de 1000 caracteres',
+    },
+    {
+      rule: 'required',
+      errorMessage: 'Campo obrigatório',
     },
   ]);
