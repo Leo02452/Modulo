@@ -8,18 +8,18 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
 
-##### Bloco 1: Introdução - Unix & Shell
+##### Bloco 1: Unix & Bash
 
 - [X] 1-3: _Unix & Shell- Part 1_
 - [X] 1-4: _Unix & Shell- Part 2_
 
-##### Bloco 2: Git & GitHub
+##### Bloco 2: Git, GitHub e Internet
 
 - [X] 2-1: _O que é e para que serve?_
 - [X] 2-2: _Entendendo os comandos_
 - [X] 2-3: _Internet - Entendendo como ela funciona_
 
-##### Bloco 3: Introdução - HTML & CSS
+##### Bloco 3: Introdução à HTML e CSS
 
 - [X] 3-1: _HTML & CSS - Estruturas de página_
 - [X] 3-2: _HTML & CSS - Primeiros passos em CSS_
@@ -27,7 +27,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 3-4: _HTML Semântico_
 - [X] 3-5: _[Projeto - HTML & CSS](https://github.com/tryber/sd-019-a-project-lessons-learned/pull/24/commits)_
 
-##### Bloco 4: Introdução - JavaScript
+##### Bloco 4: Introdução à JavaScript e Lógica de Programação
 
 - [X] 4-1: _JavaScript - Primeiros passos_
 - [X] 4-2: _JavaScript - Array e loop For_
@@ -35,7 +35,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 4-4: _JavaScript - Objetos e funções_
 - [X] 4-5: _[Projeto - Playground Functions]()_
 
-##### Bloco 5: Introdução - JavaScript - Projetos
+##### Bloco 5: JavaScript: DOM, Eventos e Web Storage
 
 - [X] 5-1: _JavaScript - DOM e seletores_
 - [X] 5-2: _JavaScript - Trabalhando com elementos_
@@ -47,7 +47,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
 - [ ] 5-7: _[Projeto - Carta Misteriosa]()_
 
-##### Bloco 6: HTML & CSS avançado
+##### Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo
 
 - [X] 6-1: _HTML & CSS - Forms_
 - [X] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
@@ -56,23 +56,23 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 6-5: _CSS Responsivo - Mobile First_
 - [X] 6-6: _[Projeto - Trybewarts]()_
 
-##### Bloco 7: JavaScript ES6 & Testes Unitários
+##### Bloco 7: Introdução à JavaScript ES6 e Testes Unitários
 
 - [X] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [X] 7-2: _JavaScript ES6 - Fluxo de exceção e Objetos_
-- [ ] 7-3: _Primeiros passos no Jest_
+- [X] 7-3: _Primeiros passos no Jest_
 - [X] 7-4: _[Projeto - JavaScript Testes Unitários]()_
 
-##### Bloco 8: JavaScript ES6
+##### Bloco 8: Higher Order Functions do JavaScript ES6
 
 - [X] 8-1: _JavaScript ES6 - Introdução a Higher Order Functions
 - [X] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
 - [X] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
-- [ ] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
-- [ ] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
+- [X] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
+- [X] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
 - [ ] 8-6: _[Projeto - Zoo functions]()_
 
-##### Bloco 9: Assincronicidade & Callbacks
+##### Bloco 9: JavaScript e Testes Assíncronos
 
 - [ ] 9-1: _JavaScript Assíncrono e Callbacks_
 - [ ] 9-2: _JavaScript Assíncrono - Fetch API e async/await
