@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pokemons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.pokemon {
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  box-shadow: 0 0 9px;
+  border-radius: 10px;
+  margin: 10px;
+  min-width: 25%;
+}
+
+.pokemon-text {
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  font-size: 1.1rem;
+  padding: 5px 0;
+}
+
+img {
+  width: 130px;
+}
